@@ -15,13 +15,13 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 123456  # integer value, dont use ""
-    API_HASH = "awoo"
+    API_ID = 1479154  # integer value, dont use ""
+    API_HASH = "6b21cb22818e09132fb904705c31d3a1"
     TOKEN = "BOT_TOKEN"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 792109647  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "Sawada"
-    SUPPORT_CHAT = 'OnePunchSupport'  #Your own group for support, do not add the @
-    JOIN_LOGGER = -1001253661229  #Prints any new group the bot is added to, prints just the name and ID.
+    OWNER_ID = 727037917  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "shijilraj"
+    SUPPORT_CHAT = 'cinemapranthanmaar'  #Your own group for support, do not add the @
+    JOIN_LOGGER = -1001474921230  #Prints any new group the bot is added to, prints just the name and ID.
     EVENT_LOGS = -1001190806654  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     #RECOMMENDED
@@ -32,7 +32,7 @@ class Config(object):
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
+    SPAMWATCH_API = "U55U80fi5cbPgRlu84sGSDGb73y2OA1xjKQrOPoz3dmHMCv5J5uOYowgGydQ~2fX"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
 
     #OPTIONAL
@@ -51,12 +51,12 @@ class Config(object):
     DEL_CMDS = True  #Delete commands that users dont have access to, like delete /ban if a non admin uses it.
     STRICT_GBAN = True
     WORKERS = 8  # Number of subthreads to use. Set as number of threads your processor uses
-    BAN_STICKER = ''  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
+    BAN_STICKER = 'CAADAgADOwADPPEcAXkko5EB3YGYAg'  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
-    CASH_API_KEY = 'awoo'  # Get your API key from https://www.alphavantage.co/support/#api-key
-    TIME_API_KEY = 'awoo'  # Get your API key from https://timezonedb.com/api
-    WALL_API = 'awoo'  #For wallpapers, get one from https://wall.alphacoders.com/api.php
-    AI_API_KEY = 'awoo'  #For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
+    CASH_API_KEY = 'GRQWH2DONAO56AW3'  # Get your API key from https://www.alphavantage.co/support/#api-key
+    TIME_API_KEY = 'EC91CWSFNM7F'  # Get your API key from https://timezonedb.com/api
+    WALL_API = '481903'  #For wallpapers, get one from https://wall.alphacoders.com/api.php
+    AI_API_KEY = 'af36e21c66dde6ab8d1a8a23e41bc41d35cf86152c927595830218b8bd1aa4ffdb44411c9521e54523287e5f1d72a9399444695295507f722f78fb377abf7ead'  #For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
 
