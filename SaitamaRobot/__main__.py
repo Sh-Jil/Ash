@@ -53,13 +53,13 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot with some fun extras ;)
+I'm official group management bot of [Cinemapranthanmarr](t.me/cinemapranthanmaar) with some fun extras ;)
 You can find the list of available commands with /help
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a part of Pokemon
+
 Have a look at the following for an idea of some of the things I can help you with.
 
 *Main* commands available:
@@ -77,7 +77,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/2bbe6208b097878d44d26.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/0aa1618b5d2761581ebe8.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -200,27 +200,24 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="🧲Add Ash Ketchum to your group!",
-                            url="t.me/{}?startgroup=true".format(
+                            text="🧲HELP!",
+                            url="t.me/{}?start=help".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
                              text="⚙️ Support Group",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
-                         InlineKeyboardButton(
-                             text="🔔Updates Channel",
-                             url="https://t.me/BotLabUpdates")
+                             url="https://t.me/cinemapranthanmaar"),
                      ],
                      [
                          InlineKeyboardButton(
-                             text="📖 Getting Started Guide",
-                             url="https://t.me/BotLabUpdates/3")
+                             text="Creator",
+                             url="https://t.me/shijilraj")
                      ],
                      [
                          InlineKeyboardButton(
                              text="💾 Source Code.",
-                             url="https://github.com/Uday0011/Ash")
+                             url="https://github.com/Sh-Jil/Ash")
                      ]]))
     else:
         update.effective_message.reply_text(
@@ -497,7 +494,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 727037917 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
